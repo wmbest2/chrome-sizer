@@ -1,0 +1,17 @@
+{
+  "name": "Sizerator",
+  "version": "1.0",
+  "description": "The first extension that I made.",
+  "toolstrips": [
+    "my_toolstrip.html"
+  ],
+ "permissions": [
+    "tabs"
+  ],
+ "content_scripts": [
+    {
+	"matches": ["http://*/*"],
+	"js": ["jquery.js","resizer.js"]
+    }
+]
+}
